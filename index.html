@@ -20,18 +20,23 @@
 <body>
   
   <div id="app">
-   <div class="my_bg vh-100 vw-100 d-flex  justify-content-center align-items-center  ">
-    <div class="box bg-body-tertiary  h-50 w-75 ">
-      <div class="row h-100 ">
-        <div class="col-10 h-100 p-0 bg-dark border" id="item-wrapper">
-          <img :src="image" alt="">
-        </div>
-        <div class="col-2 p-0  h-100  bg-dark" id="thumbs-wrapper">
-          <img  v-for="thumbImg in images" :src="thumbImg.image" :alt="thumbImg.title">
+    <div class="my_bg vh-100 vw-100 d-flex overflow-hidden justify-content-center align-items-center  ">
+      <div class="box bg-body-tertiary  h-50 w-75 ">
+        <div class="row h-100 ">
+
+          <div class="col-10 h-100 p-0 bg-dark overflow-hidden" id="item-wrapper">
+            <img v-for="({image}, index) in images" :src="image" :alt="index">
+          </div>
+
+          <div class="col-2 p-0  h-100  bg-dark" id="thumbs-wrapper">
+            <img  v-for="({image}, index) in images" :src="image" :alt="">
+            <div class="my-btn prev">&uarr;</div>
+            <div class="my-btn next">&darr;</div>
+          </div>
+
         </div>
       </div>
-    </div>
-   </div> 
+    </div> 
   </div>
 
 

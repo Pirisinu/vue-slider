@@ -28,6 +28,9 @@ createApp({
       ]
     }
   },
+  methods:{
+    
+  },
   mounted(){
     console.log(image)
   }
