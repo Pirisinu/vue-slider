@@ -29,6 +29,6 @@ createApp({
     }
   },
   mounted(){
-    console.log(images.image)
+    console.log(image)
   }
 }).mount('#app')

@@ -6,8 +6,11 @@
 .my_bg{
   background-color: cornflowerblue;
 }
+#thumbs-wrapper{
+  height: calc(100% / 5);
+}
 #thumbs-wrapper img{
   width: 100%;
-  height: calc(100% / 5);
+  height: 20%;
   object-fit: cover;
 }
