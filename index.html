@@ -15,12 +15,21 @@
   <link rel="stylesheet" href="css/style.css">
 
   <title>Vue Slider</title>
-  
+
 </head>
 <body>
   
   <div id="app">
-
+   <div class="my_bg vh-100 vw-100 d-flex  justify-content-center align-items-center  ">
+    <div class="box bg-body-tertiary  h-50 w-75 ">
+      <div class="row h-100 ">
+        <div class="col-10 h-100  bg-dark border" id="item-wrapper"></div>
+        <div class="col-2 p-0  h-100  bg-dark" id="thumbs-wrapper">
+          <img  v-for="image in images" :src="image" alt="">
+        </div>
+      </div>
+    </div>
+   </div> 
   </div>
 
 

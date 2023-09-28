@@ -1,0 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.my_bg{
+  background-color: cornflowerblue;
+}
+#thumbs-wrapper img{
+  width: 100%;
+  height: calc(100% / 5);
+  object-fit: cover;
+}
